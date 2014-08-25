@@ -1,6 +1,6 @@
 def index_power(array, n):
     """
-        Find Nth power of Nth element
+        Find Nth power of the element with index N.
     """
     return None
 
