@@ -1,0 +1,45 @@
+<p>
+    On vous donne une liste avec des nombres positifs et un nombre N.
+    Vous devez trouvez la N-i&egrave;me puissance de l'&eacute;l&eacute;ment de la liste &agrave; l'index N.
+    Si N est en dehors de la liste, alors vous devez retourner -1.
+    N'oubliez pas que le premier &eacute;l&eacute;ment est &agrave; l'index 0.
+</p>
+
+<p>
+    Regardons quelques exemples :<br>
+    - liste = [1, 2, 3, 4] et N = 2, alors le r&eacute;sultat est 3<sup>2</sup> == 9;<br>
+    - liste = [1, 2, 3] et N = 3, mais N est &agrave; l'ext&eacute;rieur de la liste, donc le r&eacute;sultat est -1.
+</p>
+
+<p>
+    <strong>Entr&eacute;e : </strong> Deux arguments. Une liste d'entiers et un nombre en tant qu'entier.
+</p>
+
+<p>
+    <strong>Sortie : </strong> Le r&eacute;sultat en tant qu'entier.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Exemple :</strong>
+    </p>
+    <pre class="brush: python">
+index_power([1, 2, 3, 4], 2) == 9
+index_power([1, 3, 10, 100], 3) == 1000000
+index_power([0, 1], 0) == 1
+index_power([1, 2], 3) == -1
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>&Agrave; quoi cela sert : </strong>
+    Cette mission vous apprend &agrave; utiliser des listes et index de base, combin&eacute;s &agrave; des math&eacute;matiques simples.
+</p>
+
+<p>
+    <strong>Pr&eacute;condition :</strong>
+    0 &lt; len(liste) &le; 10<br>
+    0 &le; N<br>
+    all(0 &le; x &le; 100 for x in liste)<br>
+</p>
