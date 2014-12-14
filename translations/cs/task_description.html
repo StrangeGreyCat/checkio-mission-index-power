@@ -1,0 +1,44 @@
+<p>
+    Je dáno pole s kladnými čísly a číslo N. Vaším úkolem je najít N-tou mocninu prvku pole
+    s indexem N. Pokud je N mimo rozsah pole, potom vraťte číslo -1. Nezapomeňte, že první
+	prvek pole má vždy index 0.
+</p>
+
+<p>
+    Pojďme se podívat na pár příkladů:<br>
+    - pole = [1, 2, 3, 4] a N = 2, potom je výsledkem 3<sup>2</sup> == 9;<br>
+    - pole = [1, 2, 3] a N = 3, ale N je mimo rozsah pole, a proto je výsledkem -1.
+</p>
+
+<p>
+    <strong>Vstup: </strong> Dva argumenty. Pole jako seznam integerů a číslo jako integer.
+</p>
+
+<p>
+    <strong>Výstup: </strong> Výsledek jako integer.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Příklad:</strong>
+    </p>
+    <pre class="brush: python">
+index_power([1, 2, 3, 4], 2) == 9
+index_power([1, 3, 10, 100], 3) == 1000000
+index_power([0, 1], 0) == 1
+index_power([1, 2], 3) == -1
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>K čemu to je: </strong>
+    Tato mise Vás naučí, jak používat základní pole a indexy společně s jednoduchou matematikou.
+</p>
+
+<p>
+    <strong>Předpoklady:</strong>
+    0 &lt; len(array) &le; 10<br>
+    0 &le; N<br>
+    all(0 &le; x &le; 100 for x in array)<br>
+</p>
