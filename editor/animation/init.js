@@ -79,7 +79,14 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
 
                 //if you need additional info from tests (if exists)
                 var explanation = data.ext["explanation"];
-                $content.find('.output').html('&nbsp;Your result:&nbsp;' + JSON.stringify(userResult));
+
+                if (userResult === null) {
+                    $content.find('.output').html('Your function returned None, maybe you are trying "print" results instead "return" them.');
+                }
+                else {
+                    $content.find('.output').html('&nbsp;Your result:&nbsp;' + JSON.stringify(userResult));
+                }
+
                 if (!result) {
                     $content.find('.answer').html('Right result:&nbsp;' + JSON.stringify(rightResult));
                     $content.find('.answer').addClass('error');
