@@ -1,0 +1,45 @@
+<p>
+    Vorgegeben werden ein Array mit positiven Zahlen und eine Zahl N.
+    Du sollst die N-te Potenz des Arrayelementes mit dem Index N finden.<br>
+    Falls N ausserhalb des Arrays liegt gebe -1 als Ergebnis zurück.
+    Vergiss nicht, dass das erste Element eines Arrays den Index 0 hat.
+</p>
+
+<p>
+    Sehen wir uns zwei Beispiele an:<br>
+    - array = [1, 2, 3, 4] und N = 2, dann ist das Ergebnis 3<sup>2</sup> == 9;<br>
+    - array = [1, 2, 3] und N = 3, aber N liegt ausserhalb des Arrays, also ist das Ergebnis -1.
+</p>
+
+<p>
+    <strong>Eingabe: </strong> Zwei Argumente. Ein Array als Liste mit Integern und eine Zahl als Integer.
+</p>
+
+<p>
+    <strong>Ausgabe: </strong> Das Ergebnis als Integer Wert.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Beispiele:</strong>
+    </p>
+    <pre class="brush: python">
+index_power([1, 2, 3, 4], 2) == 9
+index_power([1, 3, 10, 100], 3) == 1000000
+index_power([0, 1], 0) == 1
+index_power([1, 2], 3) == -1
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Wozu das gut ist: </strong>
+    In dieser Aufgabe lernst Du den grundlegenden Umgang mit Arrays und Indizes, in Verbindung mit einfacher Mathematik.
+</p>
+
+<p>
+    <strong>Voraussetzung:</strong>
+    0 &lt; len(array) &le; 10<br>
+    0 &le; N<br>
+    all(0 &le; x &le; 100 for x in array)<br>
+</p>
