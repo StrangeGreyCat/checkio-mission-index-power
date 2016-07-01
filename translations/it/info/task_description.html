@@ -1,0 +1,45 @@
+<p>
+    Ti viene data una lista di numeri positivi ed un numero N.
+    Devi trovare l'N-esima potenza dell'elemento della lista che ha indice N.
+    Se l'indice N &egrave; fuori dalla lista allora restituisci -1.
+    Non dimenticare che il primo elemento di una lista ha indice 0.
+</p>
+
+<p>
+    Vediamo alcuni esempi:<br>
+    - array = [1, 2, 3, 4] ed N = 2, allora il risultato &egrave; 3<sup>2</sup> == 9;<br>
+    - array = [1, 2, 3] ed N = 3, ma l'indice N &egrave; fuori dalla lista, dunque il risultato &egrave; -1.
+</p>
+
+<p>
+    <strong>Input: </strong> Due argomenti. Un elenco di numeri come una lista di interi ed un numero come un intero.
+</p>
+
+<p>
+    <strong>Output: </strong> Il risultato come un intero.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Esempio:</strong>
+    </p>
+    <pre class="brush: python">
+index_power([1, 2, 3, 4], 2) == 9
+index_power([1, 3, 10, 100], 3) == 1000000
+index_power([0, 1], 0) == 1
+index_power([1, 2], 3) == -1
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Come si usa: </strong>
+    Questa missione ti insegna l'uso elementare di liste ed indici combinandoli con della semplice matematica.
+</p>
+
+<p>
+    <strong>Prerequisiti:</strong>
+    0 &lt; len(array) &le; 10<br>
+    0 &le; N<br>
+    all(0 &le; x &le; 100 for x in array)<br>
+</p>
