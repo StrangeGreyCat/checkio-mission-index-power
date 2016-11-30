@@ -44,8 +44,8 @@ api.add_listener(
             'js-node': cover_codes.js_unwrap_args
         },
         function_name={
-            "python": "checkio",
-            "js": "nonUniqueElements"
+            "python": "index_power",
+            "js": "indexPower"
         }
         # checker=None,  # checkers.float.comparison(2)
         # add_allowed_modules=[],
