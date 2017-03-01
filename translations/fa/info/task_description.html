@@ -1,27 +1,28 @@
-<p>
+
+<p style="direction:rtl">
     به شما یک ارایه با اعداد مثبت  و یه عدد N داده شده.
     شما باید توان N ام عنصر N آرایه را پیدا کنید
     اگر N  خارج از دامنه آرایه بود تابع یاید عدد -۱ را برکرداند
     فراموش نکنید ایندکس عنصر اول صفر است
 </p>
 
-<p>
+<p style="direction:rtl">
     چند مثال:<br>
     - array = [1, 2, 3, 4] و N = 2, نتیجه برابر است با 3<sup>2</sup> == 9;<br>
     - array = [1, 2, 3] و N = 3, اما N خارج از آرایه است ,بنا بر این ج.اب برابر -1  است .
 </p>
 
-<p>
+<p style="direction:rtl">
     <strong>Input (ورودی): </strong> دو آرگومان یک آرایه از اعداد صحیح و یک عدد صحیح.
 </p>
 
-<p>
+<p style="direction:rtl">
     <strong>Output (خروجی): </strong> جواب به عنوان یک عدد صحیح.
 </p>
 
 
 <div class="for_info_only">
-    <p>
+    <p style="direction:rtl">
         <strong>مثال:</strong>
     </p>
     {% if interpreter.slug == "js-node" %}
@@ -40,14 +41,12 @@ index_power([1, 2], 3) == -1
         </pre>
     {% endif %}
 </div>
-
-<p class="for_info_only">
+<p class="for_info_only", style="direction:rtl">
     <strong>استفاده: </strong>
     این مسئله به شما مفاهیم ابتدایی آرایه ها و ایندکس ها را آموزش میدهد
 </p>
-
 <p>
-    <strong>فرض:</strong>
+    <strong>Precondition:</strong>
     0 &lt; len(array) &le; 10<br>
     0 &le; N<br>
     all(0 &le; x &le; 100 for x in array)<br>
