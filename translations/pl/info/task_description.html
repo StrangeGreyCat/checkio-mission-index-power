@@ -1,0 +1,53 @@
+<p>
+	Dostajesz tablicę z dodatnimi liczbami naturalnymi i liczbę N. Oblicz N-tą potęgę elementu tablicy o indeksie N.
+	Jeżeli N jest poza tablicą, zwróć -1. Nie zapomnij, że pierwszy element tablicy ma indeks 0.
+</p>
+
+<p>
+	Zobaczmy na kilka przykładów:<br>
+	- tablica = [1, 2, 3, 4] i N = 2, wynik: 3<sup>2</sup> == 9;<br>
+	- tablica = [1,2 ,3] i N = 3, ale N jest poza tablicą, więc wynik równa się -1.
+</p>
+
+<p>
+	<strong>Wejście: </strong> Dwa parametry. Tablica - lista liczb i liczba (integer).
+</p>
+
+<p>
+	<strong>Wyjście: </strong> Wynik jako liczba naturalna (integer).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+		<strong>Przykład:</strong>
+    </p>
+    {% if interpreter.slug == "js-node" %}
+        <pre class="brush: python">
+indexPower([1, 2, 3, 4], 2) == 9
+indexPower([1, 3, 10, 100], 3) == 1000000
+indexPower([0, 1], 0) == 1
+indexPower([1, 2], 3) == -1
+        </pre>
+    {% else %}
+        <pre class="brush: python">
+index_power([1, 2, 3, 4], 2) == 9
+index_power([1, 3, 10, 100], 3) == 1000000
+index_power([0, 1], 0) == 1
+index_power([1, 2], 3) == -1
+        </pre>
+    {% endif %}
+</div>
+
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+	<strong>Korzyście: </strong>
+	Ta misja nauczy Cię jak używać podstawowych tablic i indeksów oraz prostych działań matematycznych.
+</p>
+
+<p>
+    <strong>Założenia:</strong>
+    0 &lt; len(tablica) &le; 10<br>
+    0 &le; N<br>
+    dla-każdego(0 &le; x &le; 100 dla x w tablicy)<br>
+</p>
